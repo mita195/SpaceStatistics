@@ -6,7 +6,7 @@ def main():
     login = commandFile.readline()
     password =commandFile.readline().rstrip()
     print(password)
-    offsetPost = commandFile.readline()
+    offsetPost = int(commandFile.readline())
     vk_session = vk_api.VkApi(login, password)
 
     try:

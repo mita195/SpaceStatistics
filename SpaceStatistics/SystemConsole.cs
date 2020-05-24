@@ -16,7 +16,7 @@ namespace SpaceStatistics
             IBot bot = new VkQuizBot();
             Console.WriteLine(bot.BotName);
             Console.WriteLine(bot.SocialNetwork);
-            bot.Start(new string[]{ "+79081323492", "figo86", "25"});
+            bot.Start(new string[]{ });
             Console.WriteLine("END");
             Console.Read();
         }
