@@ -7,11 +7,12 @@ using SpaceStatistics.SocialNetworkPackage.Elements;
 
 namespace SpaceStatistics.ExplorerPackage
 {
+    //интерфейс для подключения к боту
+    //Выполнил Мечислав Принев
     public interface IBot
     {
         SocialNetworkEnum SocialNetwork { get; }
         string BotName { get; set; }
-        bool IsLoaded { get; }
         string Start(string[] command);
 
     }

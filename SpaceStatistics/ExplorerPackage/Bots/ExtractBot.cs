@@ -5,10 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
+/*класс для экспортирования питон скрипта из ресурсов
+ Выполнил Мечислав принев*/
 namespace SpaceStatistics.ExplorerPackage.Bots
 {
     internal static class ExtractBot
     {
+        //имя скрипта
         private static string GetName()
         {
             string botName = string.Empty;
@@ -19,9 +22,11 @@ namespace SpaceStatistics.ExplorerPackage.Bots
             }
             return botName + num.ToString() + ".py";
         }
+        //экспорт
         public static string Extract(string BotName)
         {
             byte[] bot;
+            //поиск нужного скрипта
             switch(BotName)
             {
                 case "QuizBot": bot = ResourceBots.QuizBot;
@@ -29,6 +34,7 @@ namespace SpaceStatistics.ExplorerPackage.Bots
                 default: return null;
             }
             string name = GetName();
+            //создание файла
             File.WriteAllBytes(name, bot);
             return name;
         }
