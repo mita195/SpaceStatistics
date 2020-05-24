@@ -1,0 +1,8 @@
+C:\Users\Мечислав\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\SpaceStatistics.csprojAssemblyReference.cache
+C:\Users\Мечислав\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\SpaceStatistics.ExplorerPackage.Bots.ResourceBots.resources
+C:\Users\Мечислав\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\SpaceStatistics.csproj.GenerateResource.cache
+C:\Users\Мечислав\Documents\GitHub\SpaceStatistics\SpaceStatistics\bin\Debug\SpaceStatistics.exe.config
+C:\Users\Мечислав\Documents\GitHub\SpaceStatistics\SpaceStatistics\bin\Debug\SpaceStatistics.exe
+C:\Users\Мечислав\Documents\GitHub\SpaceStatistics\SpaceStatistics\bin\Debug\SpaceStatistics.pdb
+C:\Users\Мечислав\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\SpaceStatistics.exe
+C:\Users\Мечислав\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\SpaceStatistics.pdb

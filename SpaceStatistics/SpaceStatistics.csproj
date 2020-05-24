@@ -40,6 +40,15 @@
     <Compile Include="DBPackage\ConnectionInfo.cs" />
     <Compile Include="DBPackage\Models\Post.cs" />
     <Compile Include="DBPackage\ServerType.cs" />
+    <Compile Include="ExplorerPackage\Bots\ExtractBot.cs" />
+    <Compile Include="ExplorerPackage\Bots\IBot.cs" />
+    <Compile Include="ExplorerPackage\Bots\ResourceBots.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceBots.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ExplorerPackage\Bots\VkQuizBot.cs" />
+    <Compile Include="ExplorerPackage\ProcessPython.cs" />
     <Compile Include="SocialNetworkPackage\AccountPackage\Authorization.cs" />
     <Compile Include="SocialNetworkPackage\AccountPackage\DeferredPosts.cs" />
     <Compile Include="SocialNetworkPackage\AccountPackage\ListAccounts.cs" />
@@ -49,10 +58,22 @@
     <Compile Include="SocialNetworkPackage\PostingPackage\PostingFactory.cs" />
     <Compile Include="SocialNetworkPackage\PostingPackage\TelegramPosting.cs" />
     <Compile Include="SocialNetworkPackage\PostingPackage\VkPosting.cs" />
+    <Compile Include="SystemConsole.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ExplorerPackage\" />
     <Folder Include="GraphPackage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExplorerPackage\Bots\ResourceBots.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceBots.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QuizBot.py" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
