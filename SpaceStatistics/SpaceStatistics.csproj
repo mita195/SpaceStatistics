@@ -40,6 +40,12 @@
     <Compile Include="DBPackage\ConnectionInfo.cs" />
     <Compile Include="DBPackage\Models\Post.cs" />
     <Compile Include="DBPackage\ServerType.cs" />
+    <Compile Include="ExplorerPackage\Bots\BotForms\QuizForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExplorerPackage\Bots\BotForms\QuizForm.Designer.cs">
+      <DependentUpon>QuizForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExplorerPackage\Bots\ExtractBot.cs" />
     <Compile Include="ExplorerPackage\Bots\IBot.cs" />
     <Compile Include="ExplorerPackage\Bots\ResourceBots.Designer.cs">
@@ -47,7 +53,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceBots.resx</DependentUpon>
     </Compile>
+    <Compile Include="ExplorerPackage\Bots\VkPresentBot.cs" />
     <Compile Include="ExplorerPackage\Bots\VkQuizBot.cs" />
+    <Compile Include="GraphPackage\DrawGraph.cs" />
+    <Compile Include="GraphPackage\GraphForm\GraphForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GraphPackage\GraphForm\GraphForm.Designer.cs">
+      <DependentUpon>GraphForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GraphPackage\IDraw.cs" />
     <Compile Include="SocialNetworkPackage\AccountPackage\Authorization.cs" />
     <Compile Include="SocialNetworkPackage\AccountPackage\DeferredPosts.cs" />
     <Compile Include="SocialNetworkPackage\AccountPackage\ListAccounts.cs" />
@@ -61,12 +76,35 @@
     <Compile Include="SystemConsole.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="GraphPackage\" />
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ExplorerPackage\Bots\BotForms\QuizForm.resx">
+      <DependentUpon>QuizForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExplorerPackage\Bots\ResourceBots.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResourceBots.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GraphPackage\GraphForm\GraphForm.resx">
+      <DependentUpon>GraphForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +117,7 @@
     <Reference Include="HtmlAgilityPack, Version=1.11.23.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
       <HintPath>packages\HtmlAgilityPack.1.11.23\lib\Net45\HtmlAgilityPack.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Extensions.DependencyInjection, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Extensions.DependencyInjection.2.1.0\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
     </Reference>
@@ -88,11 +127,21 @@
     <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Extensions.Logging.Abstractions.2.1.0\lib\netstandard2.0\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
     <Reference Include="VkNet, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\VkNet.1.52.0\lib\net461\VkNet.dll</HintPath>
     </Reference>
@@ -100,6 +149,24 @@
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="Resources\QuizBot.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bot_present.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reaction.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sender.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sender_words.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sova.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

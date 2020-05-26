@@ -19,7 +19,7 @@ namespace SpaceStatistics.ExplorerPackage.Bots {
     // с помощью такого средства, как ResGen или Visual Studio.
     // Чтобы добавить или удалить член, измените файл .ResX и снова запустите ResGen
     // с параметром /str или перестройте свой проект VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class ResourceBots {
@@ -63,10 +63,78 @@ namespace SpaceStatistics.ExplorerPackage.Bots {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Byte[].
         /// </summary>
+        internal static byte[] bot_present {
+            get {
+                object obj = ResourceManager.GetObject("bot_present", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pig {
+            get {
+                object obj = ResourceManager.GetObject("pig", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Byte[].
+        /// </summary>
         internal static byte[] QuizBot {
             get {
                 object obj = ResourceManager.GetObject("QuizBot", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на .
+        /// </summary>
+        internal static string reaction {
+            get {
+                return ResourceManager.GetString("reaction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sender {
+            get {
+                object obj = ResourceManager.GetObject("sender", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на 10
+        ///Поздравление 1
+        ///Поздравление 2
+        ///Поздравление 3
+        ///Поздравление новый год новый год новый год новый год
+        ///Поздравление 5
+        ///Поздравление 6
+        ///Поздравление 7
+        ///Поздравление 8
+        ///Поздравление 9
+        ///Поздравление 10.
+        /// </summary>
+        internal static string sender_words {
+            get {
+                return ResourceManager.GetString("sender_words", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sova {
+            get {
+                object obj = ResourceManager.GetObject("sova", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

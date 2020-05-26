@@ -33,6 +33,7 @@ namespace SpaceStatistics.SocialNetworkPackage.AccountPackage.Tokens
             SurName = p.LastName;
             login = log;
             this.pass = pass;
+            
         }
     }
 }

@@ -33,3 +33,6 @@ C:\Users\prinj_000\Documents\GitHub\SpaceStatistics\SpaceStatistics\bin\Debug\Mi
 C:\Users\prinj_000\Documents\GitHub\SpaceStatistics\SpaceStatistics\bin\Debug\Newtonsoft.Json.xml
 C:\Users\prinj_000\Documents\GitHub\SpaceStatistics\SpaceStatistics\bin\Debug\VkNet.xml
 C:\Users\prinj_000\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\SpaceStatistics.csproj.CopyComplete
+C:\Users\prinj_000\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\SpaceStatistics.csproj.ResolveComReference.cache
+C:\Users\prinj_000\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\SpaceStatistics.ExplorerPackage.Bots.BotForms.QuizForm.resources
+C:\Users\prinj_000\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\SpaceStatistics.GraphPackage.GraphForm.GraphForm.resources

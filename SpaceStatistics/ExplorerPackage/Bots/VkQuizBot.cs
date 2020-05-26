@@ -48,6 +48,7 @@ namespace SpaceStatistics.ExplorerPackage.Bots
             }
             //удаляем скрипт
             File.Delete(bot);
+            File.Delete("commandFileQuizBot.op");
             return "usersvoite.txt";
         }
     }
