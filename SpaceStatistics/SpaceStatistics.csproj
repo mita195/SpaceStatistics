@@ -40,6 +40,12 @@
     <Compile Include="DBPackage\ConnectionInfo.cs" />
     <Compile Include="DBPackage\Models\Post.cs" />
     <Compile Include="DBPackage\ServerType.cs" />
+    <Compile Include="ExplorerPackage\Bots\BotForms\MainBotForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExplorerPackage\Bots\BotForms\MainBotForm.Designer.cs">
+      <DependentUpon>MainBotForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ExplorerPackage\Bots\BotForms\QuizForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,12 +69,29 @@
       <DependentUpon>GraphForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GraphPackage\IDraw.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResourcePicForm.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourcePicForm.resx</DependentUpon>
+    </Compile>
     <Compile Include="SocialNetworkPackage\AccountPackage\Authorization.cs" />
     <Compile Include="SocialNetworkPackage\AccountPackage\DeferredPosts.cs" />
     <Compile Include="SocialNetworkPackage\AccountPackage\ListAccounts.cs" />
     <Compile Include="SocialNetworkPackage\AccountPackage\Tokens\VkToken.cs" />
     <Compile Include="SocialNetworkPackage\Elements\Post.cs" />
     <Compile Include="SocialNetworkPackage\Elements\SocialNetworkEnum.cs" />
+    <Compile Include="SocialNetworkPackage\Forms\AccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SocialNetworkPackage\Forms\AccountForm.Designer.cs">
+      <DependentUpon>AccountForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SocialNetworkPackage\PostingPackage\IPosting.cs" />
     <Compile Include="SocialNetworkPackage\PostingPackage\PostingFactory.cs" />
     <Compile Include="SocialNetworkPackage\PostingPackage\TelegramPosting.cs" />
@@ -96,6 +119,9 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ExplorerPackage\Bots\BotForms\MainBotForm.resx">
+      <DependentUpon>MainBotForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExplorerPackage\Bots\BotForms\QuizForm.resx">
       <DependentUpon>QuizForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +131,16 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GraphPackage\GraphForm\GraphForm.resx">
       <DependentUpon>GraphForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ResourcePicForm.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourcePicForm.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SocialNetworkPackage\Forms\AccountForm.resx">
+      <DependentUpon>AccountForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -167,6 +203,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sova.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SS4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SS5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SS6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOT1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BOT2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SS2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SS3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SS7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SS8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SS9.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

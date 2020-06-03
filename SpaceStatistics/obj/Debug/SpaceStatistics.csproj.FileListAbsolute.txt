@@ -36,3 +36,7 @@ C:\Users\prinj_000\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\Sp
 C:\Users\prinj_000\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\SpaceStatistics.csproj.ResolveComReference.cache
 C:\Users\prinj_000\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\SpaceStatistics.ExplorerPackage.Bots.BotForms.QuizForm.resources
 C:\Users\prinj_000\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\SpaceStatistics.GraphPackage.GraphForm.GraphForm.resources
+C:\Users\prinj_000\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\SpaceStatistics.ExplorerPackage.Bots.BotForms.MainBotForm.resources
+C:\Users\prinj_000\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\SpaceStatistics.MainForm.resources
+C:\Users\prinj_000\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\SpaceStatistics.ResourcePicForm.resources
+C:\Users\prinj_000\Documents\GitHub\SpaceStatistics\SpaceStatistics\obj\Debug\SpaceStatistics.SocialNetworkPackage.Forms.AccountForm.resources

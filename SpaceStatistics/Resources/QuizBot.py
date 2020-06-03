@@ -1,20 +1,19 @@
 import vk_api
 
 def main():
-    """txt login pass offset """
+    """txt login pass offset   """
     commandFile = open('commandFileQuizBot.op','r')
     login = commandFile.readline()
-    password =commandFile.readline().rstrip()
-    print(password)
+    password = commandFile.readline().rstrip()
     offsetPost = int(commandFile.readline())
     vk_session = vk_api.VkApi(login, password)
-
+    print('test')
     try:
         vk_session.auth(token_only=True)
     except vk_api.AuthError as error_msg:
         print(error_msg)
         return
-
+    print('test')
     vk = vk_session.get_api()
     myfile = open('usersvoite.txt','w')
     """ VkApi.method позволяет выполнять запросы к API. В этом примере
@@ -24,6 +23,7 @@ def main():
     """
     #82
    # ответы
+    print('test')
     realotv = {
         1:2,
         2:2,
@@ -33,8 +33,10 @@ def main():
         6:0,
         7:1
         }
+    print('test')
     resp2 = vk.groups.get(count=10,fields='name')
-    response = vk.wall.get(owner_id=-resp2['items'][0],extended = 1,offset = offsetPost,fields ="poll",count = 6)
+    #print(resp2['items'][2])
+    response = vk.wall.get(owner_id=-resp2['items'][2],extended = 1,offset = offsetPost,fields ="poll",count = 6)
     c = 0;
     for c in range(1,len(response['items']),1):
         print('-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_',c);
@@ -53,5 +55,6 @@ def main():
                    print(users[a])
                    myfile.write(str(users[a]['id'])+' '+users[a]['first_name']+' '+users[a]['last_name']+'#')
     myfile.close()
+    print('testend')
 if __name__ == '__main__':
     main()

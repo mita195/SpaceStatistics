@@ -27,9 +27,10 @@ namespace SpaceStatistics
               string[] s = new string[] { t.login, t.pass, "25" };
               bot.Start(s);
               Console.WriteLine("END");*/
-            QuizForm qf = new QuizForm();
-            qf.ShowDialog();
-            
+             QuizForm qf = new QuizForm();
+             qf.ShowDialog();//35
+          /*  MainForm m = new MainForm();
+            m.ShowDialog();*/
             /*  Authorization a = new Authorization();
                VkToken t = (VkToken)a.Token;
                string[] s = new string[] { t.login, t.pass };
